@@ -1,0 +1,7 @@
+select ID_NF,ID_ITEM, COD_PROD, VALOR_UNIT ,DESCONTO,
+
+ VALOR_UNIT - (VALOR_UNIT*(DESCONTO/100))as VALOR_VENDIDOS
+
+
+from examp
+where  DESCONTO  is not null 
